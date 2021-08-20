@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Consiliul Local al Tinerilor</title>
+</head>
+
+<body>
+    <header style="z-index: 100;">
+        <img class="logo-link" src="../images/logo1.png" />
+        <a href="../index.html">
+            CLT Vertiujeni,Florești
+            <i class="fas fa-child logo"></i>
+        </a>
+
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+
+    </header>
+
+    <div class="page-container">
+        <aside id="side-menu">
+            <a href="../index.html">Home <i class="fas fa-house-user"></i> </a>
+            <a href="evenimente.html">Evenimente <i class="fas fa-bullhorn"></i></a>
+            <a href="realizari.html"> Realizări <i class="fas fa-trophy"></i></a>
+            <a href="galerie.html">Galerie <i class="fas fa-photo-video"></i></a>
+            <a href="contacte.html">Contacte <i class="fas fa-address-book"></i></a>
+
+        </aside>
+
+        <main>
+
+            <h2 class="title">Contacte</h2>
+
+            <div class="row">
+                <div class="col-50">
+                    <h3>Contactează-ne dacă:</h3>
+                    <ul class="contact-list">
+                        <li>Dorești să adaugi un eveniment</li>
+                        <li>Cauți un loc de voluntariat</li>
+                        <li>Dorești să te implici în procesul decizional</li>
+                        <li>Ai sugestii/propuneri pentru dezvoltarea comunitară</li>
+                    </ul>
+                </div>
+
+                <div class="col-50">
+                    <h3>Date de contact:</h3>
+
+                    <ul class="contact-list">
+                        <li><b>Adresa: </b> str. Ștefan cel Mare 56</li>
+                        <li><b>Telefon: </b> 062072265</li>
+                        <li><b>Ore de lucru: </b> 10:00 - 18:00</li>
+                        <li><b>Ne poți vizita pe pagina de <a target="-blank"
+                                    href="https://www.facebook.com/CLTVertiujeni">facebook</a></b></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12700.294595391433!2d28.53012341162973!3d47.996164126725425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cc8c84cc6897a1%3A0x69cb328a249bec9!2sGimnaziul%20s.%20Vertiujeni!5e0!3m2!1sro!2s!4v1627201051170!5m2!1sro!2s"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-50">
+                    <div class="contact-form">
+                        <form>
+                            <h3 class="centered">Lasa un mesaj</h3>
+                            <input type="text" id="nume" placeholder="Nume Prenume" required />
+                            <input type="email" id="email" placeholder="Email" required />
+                            <textarea id="mesaj" rows="3" placeholder="Mesaj" required></textarea>
+                            <input type="submit" value="Transmite" onclick="sendEmail()" />
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+            </br> </br>
+            <a href="../index.html">Revino la pagina principală</a>
+
+        </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
